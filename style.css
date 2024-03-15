@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #3cc5dd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilos para la imagen del banner */
+.img {
+    width: 300px;
+}
+
+/* Estilos para el título */
+h1 {
+    color: var(--primary-color);
+}
+
+/* Estilos para el párrafo */
+p {
+    text-align: center;
+}
+
+/* Estilos para el contenedor del formulario */
+.container {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el contenedor de selección de moneda y cantidad */
+.currency {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para la etiqueta de la selección de moneda */
+.currency label {
+    margin-right: 10px;
+}
+
+/* Estilos para la selección de moneda */
+.currency select {
+    padding: 10px 20px 10px 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #0cbcdb;
+    background: transparent;
+}
+
+/* Estilos para el campo de cantidad */
+.currency input {
+    border: 1px solid #0cbcdb;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+}
+
+/* Estilos para el contenedor del botón de intercambio y la tasa de cambio */
+.swap-rate-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* Estilos para el botón de intercambio */
+.btn {
+    -moz-box-shadow: 0px 10px 14px -7px #276873;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background-color: #599bb3;
+    background: -moz-linear-gradient(center top, #599bb3 5%, #408c99 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99');
+    border-radius: 8px;
+    text-indent: 0;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    height: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    line-height: 50px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0px 1px 0px #3d768a;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de intercambio al pasar el ratón */
+.btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+    background: -moz-linear-gradient(center top, #408c99 5%, #599bb3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3');
+    background-color: #408c99;
+}
+
+/* Estilos para el botón de intercambio al hacer clic */
+.btn:active {
+    position: relative;
+    top: 3px;
+}
+
+/* Estilos para la tasa de cambio */
+.rate {
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 0 14px;
+}
+
+/* Elimina el contorno de los elementos enfocados */
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+.img {
+    width: 100%; /* Cambiar el tamaño de la imagen al 100% del ancho del contenedor */
+    max-width: 500px; /* Ajustar el ancho máximo de la imagen según sea necesario */
+    height: auto; /* Mantener la proporción de aspecto */
+}

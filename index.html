@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="banner.webp" alt="rates" class="img">
+<h1>Calculadora de tipo de cambio</h1>
+<p>Elige la moneda y el monto para obtener el tipo de cambio.</p>
+
+<div class="container">
+    <div class="currency">
+        <select name="#" id="currency-one">
+            <option value="ARS">Peso argentino (ARS)</option>
+            <option value="USD"selected>Dólar estadounidense (USD)</option>
+            <option value="AUD">Dólar australiano (AUD)</option>
+            <option value="BGN">Lev búlgaro (BGN)</option>
+            <option value="BRL">Real brasileño (BRL)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="JPY">Yen japonés (JPY)</option>
+            <option value="GBP">Libra esterlina (GBP)</option>
+            <option value="CAD">Dólar canadiense (CAD)</option>
+            <option value="CHF">Franco suizo (CHF)</option>
+            <option value="CNY">Yuan chino (CNY)</option>
+            <option value="SEK">Corona sueca (SEK)</option>
+            <option value="NZD">Dólar neozelandés (NZD)</option>            
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1">
+    </div>
+    <div class="swap-rate-container">
+        <div class="btn" id="swap">
+            Cambiar
+        </div>
+        <div class="rate" id="rate"></div>
+    </div>
+    <div class="currency">
+        <select name="#" id="currency-two" >
+            <option value="ARS">Peso argentino (ARS)</option>
+            <option value="AUD">Dólar australiano (AUD)</option>
+            <option value="BGN">Lev búlgaro (BGN)</option>
+            <option value="BRL">Real brasileño (BRL)</option>
+            <option value="USD">Dólar estadounidense (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="JPY">Yen japonés (JPY)</option>
+            <option value="GBP">Libra esterlina (GBP)</option>
+            <option value="CAD">Dólar canadiense (CAD)</option>
+            <option value="CHF">Franco suizo (CHF)</option>
+            <option value="CNY">Yuan chino (CNY)</option>
+            <option value="SEK">Corona sueca (SEK)</option>
+            <option value="NZD">Dólar neozelandés (NZD)</option>            
+            <option value="MXN"selected>Peso mexicano (MXN)</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0">
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
